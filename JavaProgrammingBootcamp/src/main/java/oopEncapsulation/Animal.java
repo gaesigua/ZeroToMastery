@@ -9,6 +9,10 @@ public class Animal {
 
     private String name;
     private int age;
+
+    //let's refactor this String height to int height, by using "Generate" then "Type Migration", then enter "int" instead of just clicking "Rename";
+    // type migration allows to change all the places with "String" to "int"
+    private int height;
     private int nrbOfEyes;
 
     //2. To allow access to the private fields above, we must use the getters and setters; the fastest way is to right click, click Generate, then Setters and Getters
@@ -26,7 +30,18 @@ public class Animal {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        //Let's make sure we will work with only age above Zero by validating the age above 0; we don't want negative age
+        if(age>0){
+            this.age = age;
+        }
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public int getNrbOfEyes() {
@@ -41,6 +56,8 @@ public class Animal {
     //This method is an action
 
     public void eat(){
+
+        System.out.println("Animal is eating!!");
 
     }
 }
