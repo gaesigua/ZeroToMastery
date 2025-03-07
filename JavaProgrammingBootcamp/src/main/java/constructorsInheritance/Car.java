@@ -1,0 +1,16 @@
+package constructorsInheritance;
+
+public class Car extends Vehicle{
+    //1. We have 2 classes: Vehicle and Car;
+    //2. Car is a child of Vehicle
+    //3. Let's create a constructor for each class
+    //4. Keep in mind that Car is a child of Vehicle
+
+    public Car(){
+
+        System.out.println("This is inside the Car constructor");
+
+
+    }
+
+}
