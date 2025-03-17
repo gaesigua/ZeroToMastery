@@ -1,0 +1,7 @@
+Begrussungen
+1. Hallo
+2. Gruss Gott!
+3. Gruss dich/sie
+4. Tschuss
+5. Servus
+6. Entschuldigen sie bitte!
